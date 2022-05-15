@@ -18,7 +18,7 @@ namespace Alura.ByteBank.Dados.Repositorio
         public bool Adicionar(ContaCorrente conta)
         {
             try
-            {    //https://docs.microsoft.com/pt-br/ef/core/change-tracking/identity-resolution            
+            {    //https://docs.microsoft.com/pt-br/ef/core/change-tracking/identity-resolution
                 _contexto.ContaCorrentes.Update(conta);
                 _contexto.SaveChanges();
 
@@ -26,7 +26,7 @@ namespace Alura.ByteBank.Dados.Repositorio
             }
             catch(Exception ex)
             {
-                throw new Exception(ex.InnerException.Message);                
+                throw new Exception(ex.InnerException.Message);
             }
         }
 

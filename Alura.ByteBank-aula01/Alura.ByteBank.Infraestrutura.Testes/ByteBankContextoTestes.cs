@@ -19,7 +19,7 @@ namespace Alura.ByteBank.Infraestrutura.Testes
             }
             catch (Exception e)
             {
-                throw new Exception("Não foi possível conectar a base de dados.");
+                throw new Exception($"Não foi possível conectar a base de dados. Erro: {e}");
             }
             //Assert
             Assert.True(conectado);

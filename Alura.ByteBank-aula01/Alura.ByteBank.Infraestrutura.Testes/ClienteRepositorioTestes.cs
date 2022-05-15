@@ -30,7 +30,6 @@ namespace Alura.ByteBank.Infraestrutura.Testes
             //Assert
             Assert.NotNull(lista);
             Assert.Equal(3, lista.Count);
-
         }
 
         [Fact]
@@ -42,14 +41,12 @@ namespace Alura.ByteBank.Infraestrutura.Testes
 
             //Assert
             Assert.NotNull(cliente);
-
         }
 
         [Theory]
         [InlineData(1)]
         [InlineData(2)]
         [InlineData(3)]
-        [InlineData(4)]
         public void TestaObterClientesPorVariosId(int id)
         {
             //Arrange
@@ -58,7 +55,6 @@ namespace Alura.ByteBank.Infraestrutura.Testes
 
             //Assert
             Assert.NotNull(cliente);
-
         }
 
         [Fact]
@@ -90,7 +86,5 @@ namespace Alura.ByteBank.Infraestrutura.Testes
             //Assert
             bytebankRepositorioMock.Verify(b => b.BuscarClientes());
         }
-
-
     }
 }
